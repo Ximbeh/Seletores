@@ -1,0 +1,98 @@
+<ol class="lista-1">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li>Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+  </ol>
+  
+  <ol class="lista-2">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li>Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+    <li>Sexto elemento</li>
+    <li>Sétimo elemento</li>
+    <li>Oitavo elemento</li>
+  </ol>
+
+  <ol class="lista-3">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li>Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+    <li>Sexto elemento</li>
+    <li>Sétimo elemento</li>
+    <li>Oitavo elemento</li>
+  </ol>
+
+  <ol class="lista-4">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li>Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+    <li>Sexto elemento</li>
+    <li>Sétimo elemento</li>
+    <li>Oitavo elemento</li>
+  </ol>
+
+  <section>
+    <h2>Produtos</h2>
+    <h2>Empresas</h2>
+    <h2 class="contato">Contato</h2>
+  </section>
+
+
+  <style>
+    /* primeiro elemento */
+    .lista-1 li:first-child {
+     background: #caf;
+    }
+
+    /* último elemento */
+    .lista-1 li:last-child {
+     background: #cfa;
+    }
+
+    /* terceiro elemento */
+    .lista-1 li:nth-child(3) {
+      background: #fda;
+    }
+
+    /* elementos ímpares */
+    .lista-2 li:nth-child(odd) {
+      background: #cfa;
+    }
+
+    /* elementos pares */
+    .lista-2 li:nth-child(even) {
+      background: rgb(130, 155, 113);
+    }
+
+    /*elementos de 3 em 3*/
+    .lista-3 li:nth-child(3n) {
+      background: rgb(153, 228, 228);
+    }
+
+    /*elementos de 4 em 4*/
+    .lista-3 li:nth-child(4n) {
+      background: rgb(228, 153, 153);
+    }
+
+    /* todos menos first-child e last-child */
+    .lista-4 li:not(:first-child, :last-child) {
+    background: #adf;
+}
+
+    /* todos h2's dentro de section, menos o que tiver a classe .contato */
+    section h2:not(.contato) {
+    text-decoration: underline;
+}
+
+  </style>
+
+
+Lista com outras pseudo-classes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
